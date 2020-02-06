@@ -1,0 +1,38 @@
+<!-- R027 - Pouco de CSS -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Um pouco de CSS</title>
+    <link rel="stylesheet" href="poucoDeCSS.css">
+    <style>
+        h1 {
+            /* display: none; */
+            /* background-color: red; */
+            font-size: 20px;
+        }
+
+        .fundoVermelho {
+            /* hexadecimal - se tiver valores repetidos para a mesma cor rgb, não precisa repetir o numero, ex. #ff0000, usa #f00 */
+            background-color: #f00;
+            /* No javascript para pegar os elementos que possuem esse id usa document.querySelector('.fundoVermelho') */
+        }
+
+        .negrito {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS</h1>
+    <!-- id -> identificador unico -->
+    <span id="textoPrincipal">Texto 1</span> <br> <br> <br>
+    <!-- class -> identificador para varios elementos -->
+    <span class="fundoVermelho negrito">Texto 2</span> <br> <br>
+    <span class="fundoVermelho" wm-atrib>Texto 3</span>
+    <!-- pegar os elementos que possuem atributo wm-atrib usa document.querySelector('[wm-atrib]')   -->
+</body>
+
+</html>
