@@ -25,7 +25,7 @@
     </footer>
 
     <script>
-        document.querySelectorAll('[wm-nav').forEach(link => {
+        document.querySelectorAll('[wm-nav]').forEach(link => {
             const conteudo = document.getElementById(
                 'conteudo'); // Como esta pegando pelo id, nao precisa do '.'
 
@@ -33,7 +33,7 @@
                 e.preventDefault(); // Previni que a navegacao ocorra
 
                 fetch(link.getAttribute(
-                    'wm-nav')) // XML HTTP Request, baseado em Promise para fazer requisicao AJAX
+                        'wm-nav')) // XML HTTP Request, baseado em Promise para fazer requisicao AJAX
                     .then(resp => resp.text()) //resp.text pega o conteudo HTML
                     .then(html => conteudo.innerHTML =
                         html) //Substituição da section para o texto que tem do link.href - text - html
